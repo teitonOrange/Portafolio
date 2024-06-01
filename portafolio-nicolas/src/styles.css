@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+.max-w-xl {
+  max-width: 36rem;
+}
+.circular {
+  border-radius: 50%;
+}
