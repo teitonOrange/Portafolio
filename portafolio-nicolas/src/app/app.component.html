@@ -1,108 +1,37 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        scroll-behavior: smooth; /* Habilita el scroll suave */
-      }
-      .main {
-        padding-top: 60px; /* Asegúrate de que el contenido no esté oculto detrás del header */
-      }
-      header {
-        background-color: white; /* Fondo para que sea visible */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de elevación */
-      }
-      .content {
-        display: flex;
-      }
-      .left-side, .right-side {
-        flex: 1;
-        padding: 1rem;
-      }
-      .divider {
-        width: 1px;
-        background-color: #ddd;
-      }
-      section {
-        padding: 60px 0; /* Añade padding para las secciones */
-      }
-    </style>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <header class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2">
-      <nav class="">
-        <ul class="flex items-center justify-center space-x-4">
-          <li class="text-lg font-bold text-gray-800">
-            <a routerLink="/home" routerLinkActive="active" class="active">Home</a>
+<header>
+  <nav class="navbar navbar-expand bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
           </li>
-          <li class="text-lg font-bold text-gray-800">
-            <a routerLink="/about" routerLinkActive="active">About</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
           </li>
-          <li class="text-lg font-bold text-gray-800">
-            <a routerLink="/contact" routerLinkActive="active">Contact</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
-          <li class="text-lg font-bold text-gray-800">
-            <a routerLink="/projects" routerLinkActive="active">Projects</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </div>
+  </nav>
+</header>
 
-    <main class="main">
-      <div class="content">
-        <div class="left-side">
-          <router-outlet></router-outlet>
-        </div>
-          <section id="home">
-            <h1>Hello, {{ title }}</h1>
-            <p>Congratulations! Your app is running. 🎉</p>
-          </section>
-          <section id="about">
-            <h2>About Us</h2>
-            <p>Information about us...</p>
-          </section>
-          <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Contact information...</p>
-          </section>
+<main class="main">
+  <div class="content">
+    <app-home></app-home>
+    <app-about></app-about>
+    <app-contact></app-contact>
+    <app-projects></app-projects>
+  </div>
+</main>
 
-          <div class="divider" role="separator" aria-label="Divider"></div>
-          <div class="right-side">
-            <section id="projects">
-              <h2>Projects</h2>
-              <p>Projects information...</p>
-            </section>
+<footer>
+  <p>Footer</p>
+</footer>
 
-          </div>
-        </div>
-    </main>
-
-  </body>
-  <footer>
-    <p>Footer</p>
-  </footer>
-</html>
-
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
