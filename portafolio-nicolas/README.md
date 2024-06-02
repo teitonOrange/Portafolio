@@ -6,7 +6,7 @@ cd portafolio-nicolas
 
 ## Ejecucion del servidor
 
-Ejecuta el comando `ng serve -o` para levantar el proyecdto, este automaticamente abrira tu navegador pagina -> `http://localhost:4200/`.
+Ejecuta el comando `ng serve -o` para levantar el proyecto, este automaticamente abrira tu navegador pagina -> `http://localhost:4200/`.
 
 
 
